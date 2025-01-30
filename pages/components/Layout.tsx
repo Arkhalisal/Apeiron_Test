@@ -9,7 +9,7 @@ import headerIcon from "@/public/image-assets/icon-apeiron-icon.jpg";
 import footerIcon from "@/public/image-assets/icon-footer.png";
 
 // main layout
-export function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col bg-[#26282a]">
       {/* making a sticky header */}

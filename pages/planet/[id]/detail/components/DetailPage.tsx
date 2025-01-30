@@ -1,4 +1,4 @@
-import { useGetOnePlanet } from "@/pages/queries/useGetOnePlanet";
+import { useGetOnePlanet } from "@/hooks/useGetOnePlanet";
 import { ChevronLeft } from "lucide-react";
 import Router from "next/router";
 import DetailPagePlanetCard from "./detailPageComponents/DetailPagePlanetCard";

@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useMemo } from "react";
 
-import { Layout } from "@/pages/components/Layout";
+import Layout from "@/pages/components/Layout";
 import DetailPage from "@/pages/planet/[id]/detail/components/DetailPage";
 
 export default function Detail() {

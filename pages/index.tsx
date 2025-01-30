@@ -3,7 +3,7 @@
 // system imports
 
 // local imports
-import { Layout } from "./components/Layout";
+import Layout from "./components/Layout";
 import PlanetsList from "@/pages/components/PlanetsList";
 
 export default function Home() {
