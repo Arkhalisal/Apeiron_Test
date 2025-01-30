@@ -1,3 +1,5 @@
+// this is a custom hook that fetches one planets
+
 // system imports
 import { gql, useQuery } from "@apollo/client";
 

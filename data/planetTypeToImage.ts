@@ -1,3 +1,7 @@
+// This module imports images for different planet types and creates an object
+// 'planetTypeToImages' that maps each planet type to its corresponding image.
+// This makes it easy to access the images based on planet type.
+
 import planetTypeArchipelago from "@/public/image-assets/icon-planet-type-archipelago.png";
 import planetTypeDelta from "@/public/image-assets/icon-planet-type-delta.png";
 import planetTypeDunes from "@/public/image-assets/icon-planet-type-dunes.png";
