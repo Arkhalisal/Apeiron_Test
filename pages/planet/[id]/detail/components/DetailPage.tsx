@@ -33,7 +33,7 @@ export default function DetailPage({ planetId }: DetailPageProps) {
       </div>
 
       {/* Planet ID and Name */}
-      <div className="w-[300px]">
+      <div className="w-[300px] mt-[43px] sm:mt-0">
         <div className="text-gray-400 text-sm">#{planetId}</div>
         <div className="text-white text-lg font-medium bg-black pl-2">{data.getPlanet.name}</div>
       </div>
