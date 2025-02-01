@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 
 // local imports
 import { useGetAllPlanets } from "@/hooks/useGetAllPlanets";
-import PageSwitchBar from "./planetsListComponents/PageSwitchBar";
-import PlanetCard from "./planetsListComponents/PlanetCard";
+import PageSwitchBar from "@/components/planetsListComponents/PageSwitchBar";
+import PlanetCard from "@/components/planetsListComponents/PlanetCard";
 
 // types
 import type { AllPlanetDataType } from "@/types";

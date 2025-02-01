@@ -6,8 +6,8 @@ import Router from "next/router";
 
 // local imports
 import { useGetOnePlanet } from "@/hooks/useGetOnePlanet";
-import DetailPagePlanetCard from "./detailPageComponents/DetailPagePlanetCard";
-import ElementChart from "./detailPageComponents/ElementChart";
+import DetailPagePlanetCard from "@/components/detailPageComponents/DetailPagePlanetCard";
+import ElementChart from "@/components/detailPageComponents/ElementChart";
 
 // types
 import type { SinglePlanetDataType } from "@/types";
