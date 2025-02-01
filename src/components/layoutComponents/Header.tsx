@@ -23,6 +23,7 @@ export default function Header() {
               alt="Apeiron Icon"
               className="absolute top-0 h-full w-auto z-10 ml-8 cursor-pointer"
               onClick={() => Router.push("/")}
+              priority
             />
           </div>
         </nav>

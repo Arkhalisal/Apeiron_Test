@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 
 // local imports
 import { useGetAllPlanets } from "@/hooks/useGetAllPlanets";
+import Loading from "@/components/share/Loading";
+import Error from "@/components/share/Error";
 import PageSwitchBar from "@/components/planetsListComponents/PageSwitchBar";
 import PlanetCard from "@/components/planetsListComponents/PlanetCard";
 
@@ -19,8 +21,8 @@ export default function PlanetsList() {
   const { loading, error, data } = useGetAllPlanets();
 
   // handle loading, error
-  if (loading) return <p className="text-center text-xl font-semibold mt-8 text-white">Loading...</p>;
-  if (error) return <p className="text-center text-xl font-semibold mt-8 text-red-600">Error: {error.message}</p>;
+  if (loading) return <Loading />;
+  if (error) return <Error error={error} />;
 
   return <div>{data && <Planets data={data} />}</div>;
 }

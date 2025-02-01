@@ -6,6 +6,8 @@ import Router from "next/router";
 
 // local imports
 import { useGetOnePlanet } from "@/hooks/useGetOnePlanet";
+import Loading from "@/components/share/Loading";
+import Error from "@/components/share/Error";
 import DetailPagePlanetCard from "@/components/detailPageComponents/DetailPagePlanetCard";
 import ElementChart from "@/components/detailPageComponents/ElementChart";
 
@@ -25,8 +27,8 @@ export default function DetailPage({ planetId }: DetailPageProps) {
   const { loading, error, data } = useGetOnePlanet(planetId);
 
   // if loading or error, return message
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
+  if (loading) return <Loading />;
+  if (error) return <Error error={error} />;
 
   return data && <Details data={data} />;
 }

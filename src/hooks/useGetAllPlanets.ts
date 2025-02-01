@@ -17,8 +17,6 @@ export function useGetAllPlanets() {
     },
   });
 
-  console.log(data);
-
   // calculate total count
   const totalCount = data?.getPlanets?.pageInfo.totalCount || 0;
 

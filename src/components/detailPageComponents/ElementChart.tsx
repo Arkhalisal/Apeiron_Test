@@ -58,7 +58,7 @@ export default function ElementChart({ fire, water, earth, air }: Elements) {
 
           {/* inner planet image */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-[46%] -translate-y-[46%] w-[120px] h-[120px]">
-            <Image src={normalPlanet} alt="Planet" fill className="object-cover" priority />
+            <Image src={normalPlanet} alt="Planet" className="object-cover" priority />
           </div>
         </div>
 
