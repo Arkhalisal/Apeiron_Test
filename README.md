@@ -34,4 +34,8 @@ npm run build
 
 5. Enter npm run start to start the development server.
 
+```bash
+npm run start
+```
+
 6. Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
