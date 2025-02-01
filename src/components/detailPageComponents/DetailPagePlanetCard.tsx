@@ -5,10 +5,10 @@ import Image from "next/image";
 
 // local imports
 import planetBorder from "@public/image-assets/image-planet-normal.png";
-import planetTypeToImages from "@/data/planetTypeToImage";
+import planetTypeToImages from "@/utils/planetTypeToImage";
 
 // types
-type PlanetType = keyof typeof planetTypeToImages;
+import type { PlanetType } from "@/utils/planetTypeToImage";
 
 type PlanetDetailProps = {
   image: string;

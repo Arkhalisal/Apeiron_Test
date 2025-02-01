@@ -8,15 +8,15 @@ import Image from "next/image";
 import normalPlanet from "@public/image-assets/icon-planet-state-normal.png";
 
 // types
-import { Elements } from "@/types";
+import type { Elements } from "@/types";
 
 export default function ElementChart({ fire, water, earth, air }: Elements) {
   // filter out elements with 0 value and create a new array
   const elements = [
-    { name: "Fire", value: fire, color: "#FF4B4B" },
-    { name: "Water", value: water, color: "#4B9EFF" },
-    { name: "Air", value: air, color: "#50C878" },
-    { name: "Earth", value: earth, color: "#8B7355" },
+    { name: "Fire", value: fire, color: "#e86642" },
+    { name: "Water", value: water, color: "#6deae6" },
+    { name: "Air", value: air, color: "#8de263" },
+    { name: "Earth", value: earth, color: "#b9b1a3" },
   ].filter((item) => item.value > 0);
 
   // if there is no element data, return a message

@@ -37,3 +37,5 @@ const planetTypeToImages = {
 };
 
 export default planetTypeToImages;
+
+export type PlanetType = keyof typeof planetTypeToImages;

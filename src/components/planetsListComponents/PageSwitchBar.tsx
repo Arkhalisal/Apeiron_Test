@@ -9,6 +9,7 @@ type PaginationProps = {
   maxPage: number;
   setPage: (page: number) => void;
 };
+
 export default function PageSwitchBar({ page, maxPage, setPage }: PaginationProps) {
   // handle page change when user enters page number
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
