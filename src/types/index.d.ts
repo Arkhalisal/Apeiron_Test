@@ -20,7 +20,7 @@ type EdgesType = {
     name: string;
     image: string;
     planetType: string;
-    listingInfo: {
+    listingInfo?: {
       startPrice: number;
     };
     priceInUSD: number;
