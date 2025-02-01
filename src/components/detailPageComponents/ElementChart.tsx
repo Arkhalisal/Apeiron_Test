@@ -5,15 +5,10 @@ import { PieChart, Pie, Cell } from "recharts";
 import Image from "next/image";
 
 // local imports
-import normalPlanet from "@/public/image-assets/icon-planet-state-normal.png";
+import normalPlanet from "@public/image-assets/icon-planet-state-normal.png";
 
 // types
-type Elements = {
-  fire: number;
-  water: number;
-  earth: number;
-  air: number;
-};
+import { Elements } from "@/types";
 
 export default function ElementChart({ fire, water, earth, air }: Elements) {
   // filter out elements with 0 value and create a new array

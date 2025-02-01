@@ -5,8 +5,8 @@ import { useRouter } from "next/router";
 import { useMemo } from "react";
 
 // local imports
-import Layout from "@/pages/components/Layout";
-import DetailPage from "@/pages/planet/[id]/detail/components/DetailPage";
+import Layout from "@/components/Layout";
+import DetailPage from "@/components/DetailPage";
 
 export default function Detail() {
   const router = useRouter();

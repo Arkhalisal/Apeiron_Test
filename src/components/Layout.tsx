@@ -5,8 +5,8 @@ import Image from "next/image";
 import Router from "next/router";
 
 // local imports
-import headerIcon from "@/public/image-assets/icon-apeiron-icon.jpg";
-import footerIcon from "@/public/image-assets/icon-footer.png";
+import headerIcon from "@public/image-assets/icon-apeiron-icon.jpg";
+import footerIcon from "@public/image-assets/icon-footer.png";
 
 // main layout
 export default function Layout({ children }: { children: React.ReactNode }) {

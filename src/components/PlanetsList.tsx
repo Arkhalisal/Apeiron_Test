@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 
 // local imports
 import { useGetAllPlanets } from "@/hooks/useGetAllPlanets";
-import PageSwitchBar from "./PlanetsListComponents/PageSwitchBar";
-import PlanetCard from "./PlanetsListComponents/PlanetCard";
+import PageSwitchBar from "./planetsListComponents/PageSwitchBar";
+import PlanetCard from "./planetsListComponents/PlanetCard";
 
 export default function PlanetsList() {
   // fetch all planets using the custom hook

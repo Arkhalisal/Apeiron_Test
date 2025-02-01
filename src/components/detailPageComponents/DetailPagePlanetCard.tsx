@@ -4,7 +4,7 @@
 import Image from "next/image";
 
 // local imports
-import planetBorder from "@/public/image-assets/image-planet-normal.png";
+import planetBorder from "@public/image-assets/image-planet-normal.png";
 import planetTypeToImages from "@/data/planetTypeToImage";
 
 // types
