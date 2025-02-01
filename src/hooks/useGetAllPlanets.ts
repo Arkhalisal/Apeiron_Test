@@ -4,15 +4,20 @@
 import { useEffect } from "react";
 import { gql, useQuery } from "@apollo/client";
 
+// type
+import type { AllPlanetDataType } from "@/types";
+
 export function useGetAllPlanets() {
   // initially load 500 planets
-  const { loading, error, data, fetchMore } = useQuery(GET_PLANETS, {
+  const { loading, error, data, fetchMore } = useQuery<AllPlanetDataType>(GET_PLANETS, {
     variables: {
       filterInput: {},
       pagingInput: { first: 500 },
       sortInput: { sortBy: "PriceAsc" },
     },
   });
+
+  console.log(data);
 
   // calculate total count
   const totalCount = data?.getPlanets?.pageInfo.totalCount || 0;

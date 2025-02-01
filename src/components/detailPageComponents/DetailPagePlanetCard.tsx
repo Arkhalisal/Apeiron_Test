@@ -8,11 +8,9 @@ import planetBorder from "@public/image-assets/image-planet-normal.png";
 import planetTypeToImages from "@/utils/planetTypeToImage";
 
 // types
-import type { PlanetType } from "@/utils/planetTypeToImage";
-
 type PlanetDetailProps = {
   image: string;
-  planetType: PlanetType;
+  planetType: string;
 };
 
 export default function DetailPagePlanetCard({ image, planetType }: PlanetDetailProps) {

@@ -2,6 +2,7 @@
 // 'planetTypeToImages' that maps each planet type to its corresponding image.
 // This makes it easy to access the images based on planet type.
 
+// image imports
 import planetTypeArchipelago from "@public/image-assets/icon-planet-type-archipelago.png";
 import planetTypeDelta from "@public/image-assets/icon-planet-type-delta.png";
 import planetTypeDunes from "@public/image-assets/icon-planet-type-dunes.png";
@@ -18,7 +19,10 @@ import planetTypeTundra from "@public/image-assets/icon-planet-type-tundra.png";
 import planetTypeVolcanic from "@public/image-assets/icon-planet-type-volcanic.png";
 import planetTypeWasteland from "@public/image-assets/icon-planet-type-wasteland.png";
 
-const planetTypeToImages = {
+// types
+import type { StaticImageData } from "next/image";
+
+const planetTypeToImages: { [key in string]: StaticImageData } = {
   Archipelago: planetTypeArchipelago,
   Delta: planetTypeDelta,
   Dunes: planetTypeDunes,
@@ -37,5 +41,3 @@ const planetTypeToImages = {
 };
 
 export default planetTypeToImages;
-
-export type PlanetType = keyof typeof planetTypeToImages;

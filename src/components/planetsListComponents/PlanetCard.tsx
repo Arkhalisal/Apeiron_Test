@@ -9,13 +9,11 @@ import planetBorder from "@public/image-assets/image-planet-normal.png";
 import planetTypeToImages from "@/utils/planetTypeToImage";
 
 // types
-import type { PlanetType } from "@/utils/planetTypeToImage";
-
 type PlanetCardProps = {
   planetId: string;
   name?: string;
   image: string;
-  planetType: PlanetType;
+  planetType: string;
   price?: number | null;
   priceInUSD?: number | null;
 };

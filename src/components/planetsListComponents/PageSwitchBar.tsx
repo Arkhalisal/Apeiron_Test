@@ -4,13 +4,13 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 // types
-type PaginationProps = {
+type PageSwitchBarProps = {
   page: number;
   maxPage: number;
   setPage: (page: number) => void;
 };
 
-export default function PageSwitchBar({ page, maxPage, setPage }: PaginationProps) {
+export default function PageSwitchBar({ page, maxPage, setPage }: PageSwitchBarProps) {
   // handle page change when user enters page number
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     // make sure the input is a number

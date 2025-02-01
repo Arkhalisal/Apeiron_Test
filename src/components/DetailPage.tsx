@@ -10,6 +10,12 @@ import DetailPagePlanetCard from "./detailPageComponents/DetailPagePlanetCard";
 import ElementChart from "./detailPageComponents/ElementChart";
 
 // types
+import type { SinglePlanetDataType } from "@/types";
+
+type DetailsProps = {
+  data: SinglePlanetDataType;
+};
+
 type DetailPageProps = {
   planetId: string;
 };
@@ -22,6 +28,10 @@ export default function DetailPage({ planetId }: DetailPageProps) {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
+  return data && <Details data={data} />;
+}
+
+function Details({ data }: DetailsProps) {
   // get elements from data
   const elements = {
     fire: data.getPlanet.fire,
@@ -43,7 +53,7 @@ export default function DetailPage({ planetId }: DetailPageProps) {
 
       {/* planet id and name */}
       <div className="w-[300px] mt-[43px] sm:mt-0">
-        <div className="text-gray-400 text-sm">#{planetId}</div>
+        <div className="text-gray-400 text-sm">#{data.getPlanet.planetID}</div>
         <div className="text-white text-lg font-medium bg-black pl-2">{data.getPlanet.name}</div>
       </div>
 

@@ -3,8 +3,11 @@
 // system imports
 import { gql, useQuery } from "@apollo/client";
 
+// type
+import type { SinglePlanetDataType } from "@/types";
+
 export function useGetOnePlanet(planetId: string) {
-  const { loading, error, data } = useQuery(GET_PLANETS, {
+  const { loading, error, data } = useQuery<SinglePlanetDataType>(GET_PLANETS, {
     variables: {
       planetID: planetId,
     },

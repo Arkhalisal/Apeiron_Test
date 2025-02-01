@@ -1,8 +1,8 @@
 // this layout contains the header and footer
 
 // local imports
-import Header from "./layoutComponents/Header";
-import Footer from "./layoutComponents/Footer";
+import Header from "@/components/layoutComponents/Header";
+import Footer from "@/components/layoutComponents/Footer";
 
 // main layout
 export default function Layout({ children }: { children: React.ReactNode }) {
