@@ -26,10 +26,12 @@ cd Apeiron_Test
 npm install
 ```
 
-4. Enter npm run dev to start the development server.
+4. Enter npm run build to build the development server so it run faster.
 
 ```bash
-npm run dev
+npm run build
 ```
 
-5. Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
+5. Enter npm run start to start the development server.
+
+6. Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
